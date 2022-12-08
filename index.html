@@ -8,34 +8,39 @@
     <title>Homepage</title>
 </head>
 <body>
-    
-    <header>
-        <nav>          
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sales.html">Sales</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><input id="searchbar" type="text" name="search"placeholder="Search for your car.."></li>
-                  </ul>
-             <h1 id="gfs">Go Faster Stripes Used Car Dealership</h1>
-             <img id="car2" height="90" width="138" alt="Delroy" src="r2.png"><br><h2 id="hp">HomePage</h2>
-        </nav>          
-    
-    </header>
+    <div>
+        <header class="banner">
+            <nav>  <a href="index.html"><img id="car2" height="90" width="138" alt="Delroy" src="r2.png"></a><br><h2 id="hp">HomePage</h2>          
+                    <ul>
+                        <!-- <li><a href="index.html">Home</a></li> -->
+                        <li><a href="sales.html">Sales</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><input id="searchbar" type="text" name="search"placeholder="Search for your car.."></li>
+                    </ul>
+                <h1 id="gfs">Go Faster Stripes Used Car Dealership</h1>
+            
+            </nav>          
+        </header>
+    </div>
 
     <main>
         <div id="lfs">
-            <a id="txt"><h3>Our Mission:</h3> Welcome to go faster stripes. We are a family run business that has been operating for the past 50 years. We have a huge range of cars to suit everyones needs. Our reputation speaks for itself, please read our reviews. All our cars are fully inspected and come with a 6 months warranty. Customer satisfaction is very important to us. We offer unbeatable value for money. We realise buying a car can be stressful therefore we try and take as much stress away from you as possible by taking you on online drives, full videos on any car inside and out and under the bonnet, we can even take you on a virtual drive. We offer delivery at no extra cost. Please call or email for any enquiries our sales team will be happy to assist.   </a>
+            <p id="txt"><h3>Our Mission:</h3> Welcome to go faster stripes. We are a family run business that has been operating for the past 50 years. We have a huge range of cars to suit everyones needs. Our reputation speaks for itself, please read our reviews. All our cars are fully inspected and come with a 6 months warranty. Customer satisfaction is very important to us. We offer unbeatable value for money. We realise buying a car can be stressful therefore we try and take as much stress away from you as possible by taking you on online drives, full videos on any car inside and out and under the bonnet, we can even take you on a virtual drive. We offer delivery at no extra cost. Please call or email for any enquiries our sales team will be happy to assist.   </p>
 
+            <div>
             <audio id="sfx"><source src="fools.mp3"></audio>
-                <div id="bgc"><video autoplay muted loop id="myVideo" height="500" width="1000" preload="true">
+                <div id="bgc">
+                    <video autoplay muted loop id="myVideo" height="450" width="800" preload="true">
                     <source src="cars.mp4" type="video/mp4" id="film">
                   </video></div>
-                <input type="image" name="CarButton" src="robin.png" alt="Delboys Car" onmouseover="goCarGo();" onmouseout="defCar();" id="car" onclick="goSales();" >
-            <!-- <button onclick="playsound()" id="button">Play a sound!</button> -->
+                 
+                    <input type="image" name="CarButton" src="robin.png" alt="Delboys Car" id="car"  height="350px" width="600px" onclick="goSales();" class="tooltip">
+                </div>
         </div>
+
         <script>
+            //events onclick="goSales();"    onmouseover="goCarGo();" onmouseout="defCar();" 
          function playsound() {
                     var sfx = document.getElementById("sfx");
                     sfx.autoplay = 'true';
@@ -55,11 +60,17 @@
                 function goSales(){
                     window.location.href = "sales.html";
                 }
+
+                function showMobileView(){
+                    window.location.href = "webDev.html";
+                }
     </script>
     </main>
-    <footer>
-       <div id="ftr">Our Email: GoFasterCars@yahoo.co.uk    phone: 07999 999 999</div>
-    </footer>
 
+    <div>
+        <footer>
+             <div id="ftr"><p><strong></strong>Email: GoFasterCars@yahoo.co.uk&nbsp;&nbsp;|&nbsp;&nbsp;Phone: 07999 999 999</strong></p></div>
+        </footer>
+    </div>
 </body>
 </html>
