@@ -4,25 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gfs.css"> 
+    <script>
+        function goContactPage(){
+            window.location.href="sales.html";
+        }
+    </script>
+    <style>
+       * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+    </style>
     <title>Sales Page</title>
 </head>
 <body>
-        <header>
-     
-            <nav>          
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sales.html">Sales</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><input id="searchbar" type="text" name="search"placeholder="Search for your car.."></li>
-                      </ul>
-                 <h1 id="gfs">Go Faster Stripes Used Car Dealership</h1>
-                 <img id="car2" height="90" width="138" alt="Delroy" src="r2.png"><br><h2 id="hp">HomePage</h2>
-            </nav>          
-        
-    
-        </header>
+    <header class="banner">
+        <nav>  <a href="index.html"><img id="car2" height="90" width="138" alt="Delroy" src="r2.png"></a><br><h2 id="hp">SalesPage</h2>          
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="sales.html">Sales</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                   
+                  </ul>
+            
+           
+        </nav>          
+    </header>
 
+<!-- MAIN (Center website) -->
+<div class="main">
+    <h1>Go Faster Stripes Used Car Dealership</h1>
+     <hr>
+    
+    <h2>SALES PAGE</h2>
+    <p>Click on a car to place an order. Leave your details and we will contact you soon.</p>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="fast1.png" alt="fast car" style="width:100%" onclick="goContactPage();">
+          <button onclick="goContactPage();">BUY</button>
+          <h3>Price: £10,000</h3>
+          <p>One previous owner. 10,000 miles on the clock. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="fast2.png" alt="fast car" style="width:100%" onclick="goContactPage();">
+        <button onclick="goContactPage();">BUY</button>
+          <h3>Price: £3000</h3>
+          <p>Five previous owners. 250,000 miles on the clock.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="fast3.png" alt="fast car" style="width:100%" onclick="goContactPage();">
+        <button onclick="goContactPage();">BUY</button>
+          <h3>Price: £9,000</h3>
+          <p>Three previous owners. 50,000 miles on the clock.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="ferrari.png" alt="fast car" style="width:100%" onclick="goContactPage();">
+        <button onclick="goContactPage();">BUY</button>
+          <h3>Price: £20,000</h3>
+          <p>One previous owner. 8,000 miles on the clock.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="ferrariHD.png" alt="fast car" style="width:100%" onclick="goContactPage();">
+            <button onclick="goContactPage();">BUY</button>
+            <h3>Price: £11,000</h3>
+            <p>One previous owner. 15,000 miles on the clock. </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="galldo.png" alt="fast car" style="width:100%" onclick="goContactPage();">
+          <button onclick="goContactPage();">BUY</button>
+            <h3>Price: £13000</h3>
+            <p>One previous owner. 5,000 miles on the clock.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="mclaren.png" alt="fast car" style="width:100%" onclick="goContactPage();">
+          <button onclick="goContactPage();">BUY</button>
+            <h3>Price: £25,000</h3>
+            <p>Two previous owners. 150,000 miles on the clock.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="muscle.png" alt="fast car" style="width:100%">
+          <button onclick="goContactPage();">BUY</button>
+            <h3>Price: £12,000</h3>
+            <p>Two previous owners. 80,000 miles on the clock.</p>
+          </div>
+        </div>
+    
+    <!-- END GRID -->
+    </div>
+    
+   
+    
+    <!-- END MAIN -->
+    </div>
+   
+      
 </body>
 </html>
